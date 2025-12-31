@@ -1,3 +1,7 @@
 Pandas
 Numpy
--e .
+ipykernel
+matplotlib
+seaborn
+scikit-learn
+# -e .
