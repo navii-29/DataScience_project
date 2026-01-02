@@ -20,6 +20,18 @@ def save_object(file_path, obj):
 
     except Exception as e:
         raise CustomException(e,sys)
+    
+
+def load_object(model_path):
+    try:
+        dir_path = os.path.dirname(model_path)
+
+        with open(model_path,'rb') as model_obj:
+            return dill.load(model_obj)
+
+
+    except Exception as e:
+        raise CustomException(e,sys)
 
 
 
